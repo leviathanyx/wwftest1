@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWF Attitude & Ruthless Aggression - Trump Cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <header>
+            <h1>WWF TRUMP CARDS</h1>
+            <div id="score-board">
+                <span>Player: <b id="p-count">0</b></span>
+                <span>CPU: <b id="c-count">0</b></span>
+            </div>
+        </header>
+
+        <main id="arena">
+            <div class="card-area">
+                <h3>YOUR CARD</h3>
+                <div id="player-card" class="card">
+                    <div class="placeholder">Dealing cards...</div>
+                </div>
+            </div>
+
+            <div id="vs-section">
+                <div id="message">Pick a stat to attack!</div>
+                <button id="next-btn" style="display:none;" onclick="nextRound()">Next Round</button>
+            </div>
+
+            <div class="card-area">
+                <h3>OPPONENT</h3>
+                <div id="cpu-card" class="card hidden">
+                    </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
